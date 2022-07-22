@@ -17,4 +17,4 @@ The project is supported by a grant from the German Research Foundation (DFG) to
 
 [^1]: Botvinik-Nezer R, Holzmeister F, ..., Schonerg T (2020). [Variability in the analysis of a single neuroimaging dataset by many teams.](https://www.nature.com/articles/s41586-020-2314-9) *Nature 582*:84–88.
 [^2]: Silberzahn R, Uhlmann EL, ..., Nosek BA (2018). [Many analysts, one dataset: making transparent how variations in analytic choices affect results.](https://journals.sagepub.com/doi/10.1177/2515245917747646) *Advances in Methods and Practices in Psychological Science 1(3)*:337–356.
-[^3]: Cohen, MX (2017). [Rigor and replication in time-frequency analyses of cognitive electrophysiology data.(https://www.sciencedirect.com/science/article/abs/pii/S0167876016300095) *International Journal of Psychophysiology 111*:80–87.
+[^3]: Cohen, MX (2017). [Rigor and replication in time-frequency analyses of cognitive electrophysiology data.](https://www.sciencedirect.com/science/article/abs/pii/S0167876016300095) *International Journal of Psychophysiology 111*:80–87.
