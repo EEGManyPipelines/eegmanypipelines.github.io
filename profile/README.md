@@ -7,7 +7,11 @@ EEG is the most widespread tool in human neuroscience research with significant 
 Participants in this project will get access to an EEG dataset and are invited to analyze the data with an analysis pipeline they deem sensible and representative of their own research.
 Participants will then report their results and a detailed description of the analysis pipeline back to us. We will use these reports to map the diversity of analysis pipelines and the effect of pipeline parameters on obtained results.
 
-For more information about the steering comittee and people involved in the project, please visit our offical website: https://eegmanypipelines.org. News and updates about the project will be posted on the website and on Twitter ([@EegManyPipes](https://twitter.com/EegManyPipes)).
+## News and contact
+
+For more information about the steering comittee and people involved in the project, please visit our offical website: https://eegmanypipelines.org. 
+
+News and updates about the project will be posted on the website and on Twitter ([@EegManyPipes](https://twitter.com/EegManyPipes)).
 
 For questions or comments, please write email to committee@eegmanypipelines.org.
 
