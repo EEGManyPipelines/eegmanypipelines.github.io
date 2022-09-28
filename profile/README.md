@@ -1,4 +1,4 @@
-# #EEGManyPipelines 
+# EEGManyPipelines 
 We are delighted to announce the official launch of the EEGManyPipelines project!
 This project is inspired by other recent projects involving many independent analysis teams to investigate how different analysts approach a given data set and how analysis approaches affect the obtained results (e.g., [^1][^2]).
 The aim of this project is to extend this novel initiative to EEG research. We believe this to be particularly important in the case of EEG data, as compared to other neuroimaging research, analysis pipelines are less standardized[^3] and have more degrees of freedom.
@@ -7,12 +7,12 @@ EEG is the most widespread tool in human neuroscience research with significant 
 Participants in this project will get access to an EEG dataset and are invited to analyze the data with an analysis pipeline they deem sensible and representative of their own research.
 Participants will then report their results and a detailed description of the analysis pipeline back to us. We will use these reports to map the diversity of analysis pipelines and the effect of pipeline parameters on obtained results.
 
-For more information about the steering comittee and people involved in the project, please visit our offical website: https://eegmanypipelines.org
+For more information about the steering comittee and people involved in the project, please visit our offical website: https://eegmanypipelines.org. News and updates about the project will be posted on the website and on Twitter ([@EegManyPipes](https://twitter.com/EegManyPipes)).
 
 For questions or comments, please write email to committee@eegmanypipelines.org.
 
 ## Funding
-The project is supported by a grant from the German Research Foundation (DFG) to Niko Busch and by the DFG priority program ["META-REP: A Meta-scientific Programme to Analyse and Optimise Replicability in the Behavioural, Social, and Cognitive Sciences"](https://www.psy.lmu.de/soz/meta-rep/index.html). Gustav Nilsonne is supported by [Riksbankens Jubileumsfond](https://www.rj.se/en/grants/2021/eegmanypipelines---effekter-av-analytisk-variabilitet-pa-resultat-i-eeg-forskning/).
+The project is supported by a grant from the German Research Foundation (DFG) to Niko Busch and by the DFG priority program ["META-REP: A Meta-scientific Programme to Analyse and Optimise Replicability in the Behavioural, Social, and Cognitive Sciences"](https://www.psy.lmu.de/soz/meta-rep/index.html). Gustav Nilsonne and Mikkel C. Vinding is supported by [Riksbankens Jubileumsfond](https://www.rj.se/en/grants/2021/eegmanypipelines---effekter-av-analytisk-variabilitet-pa-resultat-i-eeg-forskning/).
 
 
 [^1]: Botvinik-Nezer R, Holzmeister F, ..., Schonerg T (2020). [Variability in the analysis of a single neuroimaging dataset by many teams.](https://www.nature.com/articles/s41586-020-2314-9) *Nature 582*:84–88.
