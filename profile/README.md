@@ -24,10 +24,11 @@ For more information about the steering comittee and people involved in the proj
 
 For questions or comments, please write email to committee@eegmanypipelines.org.
 
-Follow EEGManyPipelines on Twitter [@EegManyPipes](https://twitter.com/EegManyPipes)
+Follow EEGManyPipelines on Twitter [@EegManyPipes](https://twitter.com/EegManyPipes) and Mastodon [neuromatch.social/@EEGManyPipes](https://neuromatch.social/@EEGManyPipes).
+
 
 ## Funding
-The project is supported by a grant from the German Research Foundation (DFG) to Niko Busch and by the DFG priority program ["META-REP: A Meta-scientific Programme to Analyse and Optimise Replicability in the Behavioural, Social, and Cognitive Sciences"](https://www.psy.lmu.de/soz/meta-rep/index.html). Gustav Nilsonne is supported by [Riksbankens Jubileumsfond](https://www.rj.se/en/grants/2021/eegmanypipelines---effekter-av-analytisk-variabilitet-pa-resultat-i-eeg-forskning/).
+The project is supported by research grants from the German Research Foundation (DFG) and the DFG priority program ["META-REP: A Meta-scientific Programme to Analyse and Optimise Replicability in the Behavioural, Social, and Cognitive Sciences"](https://www.psy.lmu.de/soz/meta-rep/index.html) to Niko Busch and a research grant from [Riksbankens Jubileumsfond](https://www.rj.se/en/grants/2021/eegmanypipelines---effekter-av-analytisk-variabilitet-pa-resultat-i-eeg-forskning/) to Gustav Nilsonne.
 
 
 [^1]: Botvinik-Nezer R, Holzmeister F, ..., Schonerg T (2020). [Variability in the analysis of a single neuroimaging dataset by many teams.](https://www.nature.com/articles/s41586-020-2314-9) *Nature 582*:84–88.
