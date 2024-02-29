@@ -1,0 +1,257 @@
+html {
+    margin: 0em;
+    padding: 0em;
+}
+
+body {
+    margin: 0em;
+    padding: 0em;
+}
+
+.header {
+    border: 2px solid #aa2222;
+    background-image: url("https://eegmanypipelines.org/EEGMP_logo_v2.2_notext_small.jpg");
+    background-repeat: no-repeat;
+    background-color: #aa2222;
+    color: #ffffff;
+    height: 100px;
+    margin: auto;
+    width: 50%;
+}
+
+.header .title{
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    padding: 30px 0px 0px 150px;
+    line-height: 40px;
+}
+
+.navi {
+    border-left: 2px solid #aa2222;
+    border-right: 2px solid #aa2222;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    background-color: #aa5555;
+    padding: 1em 0em;
+    margin: auto;
+    width: 50%;
+}
+
+.navi .items {
+    padding-left: 1em;
+}
+
+.navi .items a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0em 2em 0em 0em;
+}
+
+.footer {
+    background-color: #e0e0e0;
+    padding: 1em 0em;
+}
+
+.description {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.funding {
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+
+.greenbox {
+    border: 2px solid #11aa11;
+    padding: 1em;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.main {
+    background-color: #ffffff;
+    font: 1em 'Roboto', sans-serif;
+    margin: 0em auto 0em auto;
+    width: 50%;
+    padding: 0em 0em 0em 0em;
+}
+
+.member {
+    line-height: 1.5;
+    padding: 0em 0em 1em 0em;
+    margin-top: 0.25em;
+    clear: both;
+}
+
+.member .name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.member .affiliation {
+    font-style: italic;
+}
+
+.member .country {
+    font-style: italic;
+}
+
+h1, h2 {
+    font-family: 'Lato', sans-serif;
+    text-decoration: underline;
+}
+
+.lastmodified {
+    font: 1em 'Roboto', sans-serif;
+    margin: 0em auto;
+    padding: 1em 0em 2em 0em;
+    width: 50%;
+}
+
+input {
+    font: 1em 'Roboto', sans-serif;
+    padding: 0.1em;
+    width: 15em;
+}
+
+.journalname {
+    font-style: italic;
+}
+
+.ref {
+    padding-bottom: 1em;
+}
+
+a {
+    color: #995533;
+    text-decoration: none;
+}
+
+.success {
+    border: 2px solid #11aa11;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.bioimg {
+    border-radius: 5px;
+    float: left;
+    width: 5em;
+    margin: 0em 1em 0.25em 0em;
+}
+
+.cl {
+    clear: both;
+}
+
+
+#agreement {
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    line-height: 1.4;
+    padding: 1em;
+}
+
+#license {
+    padding: 1em;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    line-height: 1.4;
+}
+
+
+#registration input, #prior input, #posterior input, #analysis input, #freetext input {
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 3px 0px 3px 0px;
+    width: 100%;
+}
+
+#registration textarea, #prior textarea, #posterior textarea, #analysis textarea, #freetext textarea {
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 3px 0px 3px 0px;
+    width: 100%;    
+}
+
+#registration select, #prior select, #posterior select, #analysis select {
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 3px 0px 3px 0px;
+    width: 100%;        
+}
+
+#registration fieldset, #prior fieldset, #posterior fieldset, #analysis fieldset, #freetext fieldset {
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    padding: 1em 2em 1em 1em;
+    margin: 0em;
+}
+
+#registration fieldset legend, #prior fieldset legend, #posterior fieldset legend, #analysis fieldset legend, #freetext fieldset legend  {
+    font-weight: bold;
+}
+
+#registration, #prior, #posterior, #analysis, #freetext {
+    line-height: 1.4;
+}
+
+#registration input[type="checkbox"], #prior input[type="checkbox"], #posterior input[type="checkbox"], #analysis input[type="checkbox"] {
+    width: 2em;
+    padding: 1em;
+    background-color: #eee;
+    vertical-align: middle;
+}
+
+#registration input[type="radio"], #prior input[type="radio"], #posterior input[type="radio"], #analysis input[type="radio"] {
+    width: 2em;
+    padding: 1em;
+    background-color: #eee;
+    vertical-align: middle;
+}
+
+.team_identifier {
+    font-weight: bold;
+}
+
+.errorbox {
+    border: 2px solid #cc1111;
+    padding: 0.25em;
+    margin: 0.5em 0em;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.form_instruction {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.form_instruction p {
+    margin: 1em 0em 1em 0em;
+    padding: 0em;
+}
+
+.form_instruction .first {
+    margin: 0em 0em 1em 0em;
+    padding: 0em;
+}
+
+.highlight_box {
+    padding: 0.5em;
+    border: 1px solid #cacaca;
+}
+
+.date {
+    font-weight: bold;
+    font-family: monospace;
+    padding: 0em 0.5em 0em 0em;
+    line-height: 1.5;
+}

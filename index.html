@@ -1,35 +1,447 @@
-# EEGManyPipelines 
-We are delighted to announce the official launch of the EEGManyPipelines project!
-This project is inspired by other recent projects involving many independent analysis teams to investigate how different analysts approach a given data set and how analysis approaches affect the obtained results (e.g., [^1][^2]).
-The aim of this project is to extend this novel initiative to EEG research. We believe this to be particularly important in the case of EEG data, as compared to other neuroimaging research, analysis pipelines are less standardized[^3] and have more degrees of freedom.
-EEG is the most widespread tool in human neuroscience research with significant impact on research in all fields of psychology and cognitive neuroscience, which, we believe, makes the EEGManyPipelines project a timely and crucial endeavor that we hope will benefit a large part of the cognitive neuroscience community.
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="script/analytics.js"></script><script type="text/javascript" async="" src="script/js_002.js"></script><script async="" src="script/js.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-Participants in this project will get access to an EEG dataset and are invited to analyze the data with an analysis pipeline they deem sensible and representative of their own research.
-Participants will then report their results and a detailed description of the analysis pipeline back to us. We will use these reports to map the diversity of analysis pipelines and the effect of pipeline parameters on obtained results.
+  gtag('config', 'UA-180324824-1');
+</script>
+<meta charset="UTF-8">
+<meta name="description" content="EEGManyPipelines project">
+<meta name="keywords" content="EEG, data analysis, reproducibility">
+<link rel="stylesheet" href="css/style.css">
+<link href="css/css2_002.css" rel="stylesheet">
+<link href="css/css2_003.css" rel="stylesheet">
+<link href="css/css2.css" rel="stylesheet">
+<title>EEGManyPipelines</title>
+<meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<!-- Website for the Manypipelines project.
 
-<p align="center">
-<img src="https://github.com/EEGManyPipelines/.github/blob/main/EEGMP_logo_v2.2.jpg" alt="EMP_logo" title="AEMP_logo" width="250" align="center"/> 
-</p>
+Author: Tuomas Puoliväli
+Affiliation: University of Jyväskylä
+Email: tuomas.a.b.puolivali at jyu.fi, tuomas.puolivali at ieee.org
+Last modified: 12th October 2020
+-->  
+<body>
 
-## Projects
-* `Position_paper`: Summary figures of demographics and representiveness of the analysts participating in the EEGManyPipelines project. Used in the poistion paper (Trübutschek et al., 2022).
+<div class="header"><div class="title">EEGManyPipelines</div></div>
 
-## Publications
-* Algermissen, J., Busch, N., Cesnaite, E., Fischer, N., Gianelli, C., Koen, J., Marshall, T., Navid, M. S., Nilsonne, G., Pascarella, A., Puoliväli, T., Senoussi, M., Trubutschek, D., Vinding, M. C., Vitale, A., Yang, Y.-F., & Yeaton, J. (2022). *EEGManyPipelines: Robustness of EEG results across analysis pipelines.* Open Science Framework. https://doi.org/10.17605/OSF.IO/42K5H
-* Trübutschek, D., Yang, Y.-F., Gianelli, C., Cesnaite, E., Fischer, N. L., Vinding, M. C., Marshall, T., Algermissen, J., Pascarella, A., Puoliväli, T., vitale,  andrea, Busch, N., & Nilsonne, G. (2022). *EEGManyPipelines: A large-scale, grass-root multi-analyst study of EEG analysis practices in the wild* [Preprint]. MetaArXiv. https://doi.org/10.31222/osf.io/jq342
+<div class="navi">
+<div class="items">
+<a href="#ref-news">News</a>    
+<a href="#ref-project-description">Project description</a>  
+<a href="#ref-steering-committee">Steering committee</a>
+<a href="#ref-advisory-board">Advisory board</a>  
+<a href="#ref-funding">Funding</a>  
+<a href="#ref-references">References</a>
+</div>
+</div>
 
-## Contact
+<div class="main">
 
-For more information about the steering comittee and people involved in the project, please visit our offical website: https://eegmanypipelines.org
+<br>
+  
+<h2 id="ref-news">News</h2>
 
-For questions or comments, please write email to committee@eegmanypipelines.org.
+<div class="description">
+<ul>  
+<li><span class="date">February 2024</span> <strong> NEW UPDATEEE!!!.</strong></li>
+<li><span class="date">Jun 2022</span> <strong>The data submission phase
+ is now finished. We thank all participants for their great efforts! 
+More information will follow in the upcoming newsletters.</strong></li>
+<li><span class="date">May 2022</span> <strong>We have <a href="https://osf.io/xfrbe/">published a pre-registration report on OSF</a>, which outlines the conceptual aims of our upcoming analysis!</strong></li>
+<li><span class="date">May 2022</span> The <a href="https://www.eegmanypipelines.org/faq.php">frequently asked questions page</a> has been updated.</li>  
+<li><span class="date">Apr 2022</span> The data submission portal will open on May 2nd! Please <a href="mailto:committee@eegmanypipelines.org">contact us</a> if you have not received an individual URL to the system by May 3rd.</li>
+<li><span class="date">Nov 2021</span> We have now completed screening 
+the registrations. We are excited to announce that more than 300 teams 
+consisting of more than 600 researchers decided to participate to this 
+project! During the next 1–2 days, you will receive from us either the 
+instructions for downloading and analyzing the data, or a request to 
+provide more information that allows us to confirm your eligibility for 
+participating to this project.</li>
+</ul>
+</div><br>
+  
+<h2 id="ref-project-description">Project description</h2>
 
-Follow EEGManyPipelines on Twitter [@EegManyPipes](https://twitter.com/EegManyPipes)
+<div class="description">
+We are delighted to announce the official launch of the EEGManyPipelines
+ project! This project is inspired by other recent projects involving 
+many independent analysis teams to investigate how different analysts 
+approach a given data set and how analysis approaches affect the 
+obtained results (e.g., <a href="#ref-references">Silberzahn et al., 2015</a>; <a href="#ref-references">Botvinik-Nezer et al., 2020</a>).
+ The aim of this project is to extend this novel initiative to EEG 
+research. We believe this to be particularly important in the case of 
+EEG data, as compared to other neuroimaging research, analysis pipelines
+ are less standardized (e.g. see <a href="#ref-references">Cohen, 2017</a>)
+ and have more degrees of freedom. EEG is the most widespread tool in 
+human neuroscience research with significant impact on research in all 
+fields of psychology and cognitive neuroscience, which, we believe, 
+makes the EEGManyPipelines project a timely and crucial endeavor that we
+ hope will benefit a large part of the cognitive neuroscience community.
+<br><br>
+Participants in this project will get access to an EEG dataset and are 
+invited to analyze the data with an analysis pipeline they deem sensible
+ and representative of their own research. Participants will then report
+ their results and a detailed description of the analysis pipeline back 
+to us. We will use these reports to map the diversity of analysis 
+pipelines and the effect of pipeline parameters on obtained results.  
+<br><br>
+For questions or comments, please write email to <a href="mailto:committee@eegmanypipelines.org">committee@eegmanypipelines.org</a>.
+</div>
 
-## Funding
-The project is supported by a grant from the German Research Foundation (DFG) to Niko Busch and by the DFG priority program ["META-REP: A Meta-scientific Programme to Analyse and Optimise Replicability in the Behavioural, Social, and Cognitive Sciences"](https://www.psy.lmu.de/soz/meta-rep/index.html). Gustav Nilsonne is supported by [Riksbankens Jubileumsfond](https://www.rj.se/en/grants/2021/eegmanypipelines---effekter-av-analytisk-variabilitet-pa-resultat-i-eeg-forskning/).
+<br>
+  
+<h2 id="ref-steering-committee">Steering committee</h2>
 
-## References
-[^1]: Botvinik-Nezer R, Holzmeister F, ..., Schonerg T (2020). [Variability in the analysis of a single neuroimaging dataset by many teams.](https://www.nature.com/articles/s41586-020-2314-9) *Nature 582*:84–88.
-[^2]: Silberzahn R, Uhlmann EL, ..., Nosek BA (2018). [Many analysts, one dataset: making transparent how variations in analytic choices affect results.](https://journals.sagepub.com/doi/10.1177/2515245917747646) *Advances in Methods and Practices in Psychological Science 1(3)*:337–356.
-[^3]: Cohen, MX (2017). [Rigor and replication in time-frequency analyses of cognitive electrophysiology data.(https://www.sciencedirect.com/science/article/abs/pii/S0167876016300095) *International Journal of Psychophysiology 111*:80–87.
+<div class="committee">
+
+<div class="member">
+<div class="name">Algermissen, Johannes <span class="biourl"><a href="https://www.ru.nl/personen/algermissen-j/">[Homepage]</a></span> <img src="images/200johannes_400px_2.png" alt="johannes" class="bioimg"></div>
+<div class="affiliation">Donders Institute for Brain, Cognition, and Behavior, Radboud University Nijmegen</div>
+<div class="country">Netherlands</div>
+<div class="bio">
+I am a PhD candidate at the Donders Institute in Nijmegen, the 
+Netherlands. I use (simultaneous) EEG and fMRI, eye-gaze, and 
+pupillometry combined with computational modeling of behavior to study 
+reinforcement learning and decision-making. I am particularly interested
+ in motivational biases, i.e. the prospect of rewards or punishments 
+invigorating or suppressing behavior.
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Busch, Niko <span class="biourl"><a href="http://go.wwu.de/xgfs6">[Homepage]</a></span> <img src="css/200niko_busch_400px.jpg" alt="niko" class="bioimg"></div>
+<div class="affiliation">Institute of Psychology, University of Münster</div>
+<div class="country">Germany</div>
+<div class="bio">
+I am a professor for experimental psychology at the University of 
+Münster. I use EEG, eye tracking, and psychophysics to study visual 
+cognition. For more information, go to
+<a href="http://go.wwu.de/xgfs6">http://go.wwu.de/xgfs6</a>.
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Elena Cesnaite <span class="biourl"><a href="https://www.researchgate.net/profile/Elena-Cesnaite">[ResearchGate]</a></span> <span class="biourl"><a href="https://twitter.com/elena_cesnaite">[Twitter]</a></span> <img src="images/elena.jpg" alt="elena" class="bioimg"></div>
+<div class="affiliation">Institute of Psychology, University of Münster</div>
+<div class="country">Germany</div>
+<div class="bio">
+I'm a postdoc at the Institute of Psychology, University of Münster, 
+focusing on reproducibility of EEG research and an impact different 
+analysis parameters have to the observed result. I’m primarily working 
+on the EEGManyPipelines project. My previous research experience and 
+interests extend to spontaneous neural oscillations and their role in 
+attention modulation.
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+    
+<div class="member">
+<div class="name">Fischer, Nastassja L. <span class="biourl"><a href="https://scholar.google.com/citations?user=19OHLbQAAAAJ&amp;hl=en">[Google Scholar]</a></span> <span class="biourl"><a href="https://twitter.com/nastalfischer">[Twitter]</a></span> <img src="images/200nastassja.png" alt="nastassja" class="bioimg"></div>
+<div class="affiliation">National University of Singapore (NUS)</div>
+<div class="country">Singapore</div>
+<div class="bio">
+I am a postdoc at National University of Singapore (NUS), where I 
+presently work with EEG correlates of prosocial behaviours (e.g. 
+fairness perception and theory of mind skills) in preschoolers. During 
+my PhD, I investigated the EEG features linked with propagating 
+information through social media. Therefore, my main research interests 
+are (but not restricted to) investigating how people process and 
+perceive social information and how this can affect their behaviours in 
+real-world. When I am not working, I like to explore different cuisines,
+ meet some friends and watch Netflix series.  
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Gianelli, Claudia <span class="biourl"><a href="https://twitter.com/isotopia">[Twitter]</a></span> <img src="images/200cg_photo_emp_400px.jpg" alt="claudia" class="bioimg"></div>
+<div class="affiliation">Department of Clinical and Experimental Medicine, University of Messina</div>
+<div class="country">Italy</div>
+<div class="bio">
+I am a Senior Assistant Professor at the University of Messina. I use 
+brain stimulation, EEG, kinematics and behavioral measures - often in 
+combination - to investigate motor cognition in healthy participants and
+ clinical populations (e.g. patients with movement disorders).  
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Koen, Josh <span class="biourl"><a href="https://koenlab.org/">[Homepage]</a></span> <span class="biourl"><a href="https://scholar.google.com/citations?user=DsZoSYgAAAAJ&amp;hl=en">[Google Scholar]</a></span> <span class="biourl"><a href="https://twitter.com/joshuadkoen">[Twitter]</a></span> <img src="images/200joshua_koen.jpg" alt="josh" class="bioimg"></div>
+<div class="affiliation">Department of Psychology, University of Notre Dame</div>
+<div class="country">USA</div>
+<div class="bio">
+I am an Assistant Professor at the University of Notre Dame. I use EEG 
+and fMRI to study the neural bases of episodic memory - memory for 
+unique past events - and how memory changes across the lifespan.
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+  
+<div class="member">
+<div class="name">Marshall, Tom <span class="biourl"><a href="http://www.tomrmarshall.com/">[Homepage]</a></span> <span class="biourl"><a href="https://www.win.ox.ac.uk/people/tom-marshall">[Homepage]</a></span> <span class="biourl"><a href="https://twitter.com/tomrhysmarshall">[Twitter]</a></span> <img src="images/200tom.jpg" alt="tom" class="bioimg"></div>
+<div class="affiliation">Wellcome Centre for Integrative Neuroimaging, University of Oxford</div>
+<div class="country">UK</div>
+<div class="bio">
+I'm a post-doc at the University of Oxford, interested in how 
+interactions between brain regions enable humans to learn to attend to 
+the right parts of space. I use a combination of MEG, computational 
+modelling and brain stimulation (TMS, tDCS). I’m also interested in how 
+we can improve the ways we do and think about cognitive neuroscience.
+</div>
+</div><!---end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Navid, Muhammad Samran <span class="biourl"><a href="https://msnavid.com/">[Homepage]</a></span> <span class="biourl"><a href="https://twitter.com/_msnavid">[Twitter]</a></span> <img src="images/200msnavid_400px.jpg" alt="muhammad" class="bioimg"></div>
+<div class="affiliation">King's College London and New Zealand College of Chiropractic</div>
+<div class="country">UK</div>
+<div class="bio">
+I am about to start Postdoc at King's College London in collaboration 
+with NZ College of Chiropractic to continue my research on evaluating 
+the effects of spinal manipulation on neural activity in healthy 
+participants and clinical populations. I am also involved in research on
+ brain-computer interfaces for stroke rehabilitation. I use EEG, fNIRS, 
+EMG and brain stimulation (TMS, tDCS).
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Nilsonne, Gustav <span class="biourl"><a href="https://nilsonne.net/about">[Homepage]</a></span> <span class="biourl"><a href="https://staff.ki.se/people/gusnil">[Homepage]</a></span> <span class="biourl"><a href="https://twitter.com/GustavNilsonne">[Twitter]</a></span> <img src="images/200nilsonne_400px.jpg" alt="gustav" class="bioimg"></div>
+<div class="affiliation">Department of Clinical Neuroscience, Karolinska Institutet</div>
+<div class="country">Sweden</div>
+<div class="bio">
+I am a researcher in neuroscience and metascience. I have worked for 
+many years with brain imaging methods including MRI and EEG to study 
+e.g. sleep and diurnal rhythms. I also take a strong interest in 
+research transparency and reproducibility, and have been involved in 
+numerous projects to examine replicability and reproducibility.
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Pascarella, Annalisa <span class="biourl"><a href="https://www.iac.cnr.it/~pasca/">[Homepage]</a></span> <span class="biourl"><a href="https://twitter.com/annalisapascar1">[Twitter]</a></span> <img src="images/200annalisa_400px.jpg" alt="annalisa" class="bioimg"></div>
+<div class="affiliation">Institute for Applied Mathematics Mauro Picone, National Research Council, Roma</div>
+<div class="country">Italy</div>
+<div class="bio">
+I am a Researcher at Institute of Applied Mathematics M. Picone, 
+National Council of Research in Roma (Italy). My main research interests
+ regard the formulation, implementation and validation of algorithms for
+ the solution of the MEG/EEG inverse problems. Recently a lot of effort 
+was devoted in the development of <a href="http://doi.org/10.1016/j.neuroimage.2020.117020">NeuroPycon</a>
+ an open-source brain data analysis kit which provides reproducible 
+Python-based pipelines for advanced multi-thread processing of fMRI, MEG
+ and EEG data, with a focus on connectivity and graph analyses.
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Puoliväli, Tuomas <span class="biourl"><a href="https://github.com/puolival">[GitHub]</a></span> <span class="biourl"><a href="https://scholar.google.fi/citations?user=IElk0v0AAAAJ&amp;hl=en">[Google Scholar]</a></span> <span class="biourl"><a href="https://www.linkedin.com/in/tuomas-puolivali">[LinkedIn]</a></span> <img src="images/200tuomas_400px.png" alt="tuomas" class="bioimg"></div>
+<div class="affiliation">Faculty of Information Technology, University of Jyväskylä</div>
+<div class="country">Finland</div>
+<div class="bio">
+I am a doctoral student at the Faculty of Information Technology of 
+University of Jyväskylä. I develop new signal processing methods for 
+analyzing electroencephalography and magnetoencephalography data, as 
+well as biologically realistic spiking neural networks that can be used 
+to simulate small brain structures, perform unsupervised machine 
+learning, and many other tasks. I have also recently published a 
+Python-based software for multiple hypothesis testing, and participate 
+in projects that aim at enhancing reproducibility of neuroscience 
+research.
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Senoussi, Mehdi <span class="biourl"><a href="https://sites.google.com/site/senoussim/">[Homepage]</a></span> <span class="biourl"><a href="https://twitter.com/cog_senoussi">[Twitter]</a></span> <img src="images/200profile_pic_mehdi.png" alt="mehdi" class="bioimg"></div>
+<div class="affiliation">Department of Experimental Psychology, Ghent University</div>
+<div class="country">Belgium</div>
+<div class="bio">
+I am a postdoc at Ghent University (Belgium) where I work with Tom 
+Verguts on top-down/cognitive control mechanisms that allow us to 
+manipulate and use perceptual and/or mnesic representations. For 
+instance, our ability to implement a task rule (bind a percept to an 
+action), attend to a specific feature, or create and manipulate a mental
+ image. To tackle these questions I use computational modelling, 
+Multivariate Pattern Analysis (MVPA) in fMRI &amp; EEG, and spectral and
+ connectivity measures (phase-locking, cross-frequency coupling). During
+ my PhD at the CerCo lab (Toulouse, France) I worked on the effects of 
+learning on neural representations of visual objects using MVPA in fMRI 
+and EEG.
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Trübutschek, Darinka <span class="biourl"><a href="https://sites.google.com/site/dtruebutschek/">[Homepage]</a></span> <span class="biourl"><a href="https://twitter.com/DTruebutschek">[Twitter]</a></span> <img src="images/200darinka.jpg" alt="darinka" class="bioimg"></div>
+<div class="affiliation">Department of Experimental Psychology, University of Oxford</div>
+<div class="country">UK</div>
+<div class="bio">
+I am currently a postdoctoral fellow with Mark Stokes at the University 
+of Oxford. My main research interest lies in dissecting the 
+neuro-cognitive architecture of working memory, our brain's ability to 
+store and manipulate information in the service of adaptive, flexible, 
+and intelligent behavior. To this end, I employ a mixture of behavioral 
+techniques and electrophysiological methods (i.e., EEG/MEG), as well as 
+machine learning algorithms. Prior to this , as part of my PhD with 
+Stanislas Dehaene (Paris, France), I explored the cognitive and neural 
+characteristics and features of a newly discovered phenomenon: 
+non-conscious working memory. When I am not in the lab, I enjoy spending
+ time with my son, cooking (and eating) dishes from different cultures 
+and cuisines, listening to and playing music (either on my recorder or 
+my guitar), and traveling to (foreign) cities and countries.
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Vinding, Mikkel C. <span class="biourl"><a href="https://www.drcmr.dk/mikkelcv">[Homepage]</a></span> <img src="images/200vinding_mc_400px_2.jpg" alt="mikkel" class="bioimg"></div>
+<div class="affiliation">DRCMR, Centre for Functional and Diagnostic Imaging and Research, Copenhagen University Hospital, Copenhagen, Denmark</div>
+<div class="affiliation">NatMEG, Department of Clinical Neuroscience, Karolinska Institutet, Stockholm, Sweden</div>
+<div class="bio">
+I am a Research Fellow at the Danish Research Centre for Magnetic 
+Resonance (DRCMR) at Copenhagen University Hospital Hvidovre, and 
+affiliated researcher at The National Facility for 
+Magnetoencephalography (NatMEG) at Karolinska Institutet. My main 
+research is on motor control and functional correlates of 
+neurodegenerative diseases involving MEG, EEG, and TMS.
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Vitale, Andrea <span class="biourl"><a href="https://twitter.com/tale_andrea">[Twitter]</a></span> <img src="images/200andrea_400px.jpg" alt="andrea" class="bioimg"></div>
+<div class="affiliation">Child Psychopathology Department, Scientific 
+Institute IRCCS Eugenio Medea; Laboratory for Autism and 
+Neurodevelopmental Disorders, Istituto Italiano di Tecnologia</div>
+<div class="country">Italy</div>
+<div class="bio">
+I am a second-year postdoctoral fellow. Currently my research 
+investigates the impact of neural oscillatory states on low-level 
+sensory information processing and their potential cascade effects in 
+developmental disorders. For this purpose I use EEG (and eye-tracking) 
+and I am interested in a mixture of source localization and decoding 
+analysis.
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Yang, Yu-Fang <span class="biourl"><a href="https://twitter.com/ufangyang?lang=en">[Twitter]</a></span> <img src="images/200yufang_yang_400px_3.png" alt="yu-fang" class="bioimg"></div>
+<div class="affiliation">Freie Universität Berlin, Department of Education and Psychology, Division General Psychology and Neuropsychology</div>
+<div class="country">Germany</div>
+<div class="bio">
+I am a postdoctoral fellow at the University of Würzburg. I use EEG, 
+eye-tracking, and psychophysics to investigate the face perception, 
+visual processing, and emotions both in healthy subjects and patients 
+with disorders in socioemotional processing, such as patients with 
+schizophrenia. Furthermore, I combine EEG measure with computational 
+modelling of behaviour to study decision making in face processing.  
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+<div class="member">
+<div class="name">Yeaton, Jeremy <span class="biourl"><a href="https://jeremyyeaton.github.io/">[Homepage]</a></span> <span class="biourl"><a href="https://twitter.com/JeremyYeaton">[Twitter]</a></span> <img src="images/200headshot_jdy_400px.jpg" alt="jeremy" class="bioimg"></div>
+<div class="affiliation">Department of Language Science, University of California, Irvine</div>
+<div class="country">USA</div>
+<div class="bio">
+I am a PhD student in Language Science at the University of Californa, 
+Irvine. I use a wide variety of methods (e.g.: EEG, eye-tracking, animal
+ models) to investigate the evolutionary and neural bases of language. 
+More specifically, I’m interested in the neural implementation of 
+hierarchical structure, especially syntax.
+</div>
+</div><!-- end of member -->
+
+<div class="cl"></div><!-- div with clear both -->
+
+</div><!-- end of committee -->
+
+<br>
+  
+<h2>Advisory board</h2>
+
+<div id="ref-advisory-board">
+<ul>
+<li>Balazs Aczel, ELTE, Eotvos Lorand University, Budapest, Hungary</li>
+<li>Mike X. Cohen, Radboud University Medical Center, Donders Centre for Medical Neuroscience, the Netherlands</li>
+<li>Arnaud Delorme, Centre de recherche Cerveau et Cognition, Paul Sabatier University, Toulouse, France</li>
+<li>Anna Dreber, Stockholm School of Economics, Stockholm, Sweden</li>
+<li>Alexandre Gramfort, Université Paris-Saclay, Inria, CEA, Palaiseau, France</li>
+<li>Felix Holzmeister, Department of Economics, University of Innsbruck, Innsbruck, Austria</li>
+<li>Magnus Johannesson, Stockholm School of Economics, Stockholm, Sweden</li>
+<li>Steven J. Luck, Center for Mind &amp; Brain and Department of Psychology, University of California, Davis, CA, USA</li>
+<li>Vanja Ković, Department of Psychology, Faculty of Philosophy, University of Belgrade, Belgrade, Serbia</li>
+<li>Robert Oostenveld, Donders Institute for Brain, Cognition and Behaviour, Radboud University, Nijmegen, the Netherlands</li>
+<li>Russell Poldrack, Department of Psychology, Stanford University, Stanford, USA</li>
+<li>Yuri Pavlov, University of Tuebingen, Tuebingen, Germany; Ural Federal University, Yekaterinburg, Russia</li>
+<li>Cyril Pernet, Neurobiology Research Unit, Copenhagen University Hospital, Rigshospitalet, Copenhagen, Denmark</li>
+<li>Aina Puce, Department of Psychological &amp; Brain Sciences, Indiana University, Bloomington, USA</li>
+<li>Anđela Šoškić, Faculty of Philosophy, Laboratory for Neurocognition 
+and Applied Cognition, University of Belgrade, Belgrade, Serbia</li>
+<li>Tom Schonberg, Tel Aviv University, Tel Aviv, Israel</li>
+<li>Martin Schweinsberg, ESMT Berlin, Berlin, Germany</li>
+<li>Barnabas Szaszi, ELTE, Eotvos Lorand University, Budapest, Hungary</li>
+<li>Erik L. Uhlmann, Department of Organizational Behavior, INSEAD, Singapore</li>
+</ul>
+</div>
+  
+<br>
+  
+<h2 id="ref-funding">Funding</h2>
+
+<div class="funding">
+The project is supported by a grant from the German Research Foundation (DFG) to Niko Busch and by the DFG priority program "<a href="https://www.psy.lmu.de/soz/meta-rep/index.html">META-REP: A Meta-scientific Programme to Analyse and Optimise Replicability in the Behavioural, Social, and Cognitive Sciences</a>". Gustav Nilsonne is supported by <a href="https://www.rj.se/en/grants/2021/eegmanypipelines---effekter-av-analytisk-variabilitet-pa-resultat-i-eeg-forskning/">Riksbankens Jubileumsfond</a>.
+</div>
+  
+<h2 id="ref-references">References</h2>
+
+<div class="references">
+
+<div class="ref">[1] Botvinik-Nezer R, Holzmeister F, ..., Schonerg T (2020): <a href="https://www.nature.com/articles/s41586-020-2314-9">Variability in the analysis of a single neuroimaging dataset by many teams.</a> <span class="journalname">Nature</span> 582:84–88.</div>
+<div class="ref">[2] Cohen, MX (2017): <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167876016300095">Rigor and replication in time-frequency analyses of cognitive electrophysiology data.</a> <span class="journalname">International Journal of Psychophysiology</span> 111:80–87.</div>
+<div class="ref">[3] Silberzahn R, Uhlmann EL, ..., Nosek BA (2018): <a href="https://journals.sagepub.com/doi/10.1177/2515245917747646">Many analysts, one dataset: making transparent how variations in analytic choices affect results.</a> <span class="journalname">Advances in Methods and Practices in Psychological Science</span> 1(3):337–356.</div>
+
+</div><!-- end of references -->
+
+</div><!-- end of main -->
+
+<div class="lastmodified">
+This page was last modified on July 2nd 2022.
+</div>
+
+<div class="footer">
+</div>
+
+
+
+</body></html>
