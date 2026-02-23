@@ -10,13 +10,20 @@ body {
 
 .header {
     border: 2px solid #aa2222;
-    background-image: url("https://eegmanypipelines.org/EEGMP_logo_v2.2_notext_small.jpg");
-    background-repeat: no-repeat;
     background-color: #aa2222;
     color: #ffffff;
     height: 100px;
     margin: auto;
-    width: 50%;
+    width: 92%;
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+}
+
+.header .banner-logo {
+    height: 84px;
+    width: auto;
+    margin-left: 10px;
 }
 
 .header .title{
@@ -24,8 +31,8 @@ body {
     font-weight: bold;
     font-family: 'Lato', sans-serif;
     text-align: left;
-    padding: 30px 0px 0px 150px;
-    line-height: 40px;
+    margin-left: 18px;
+    line-height: 1.2;
 }
 
 .navi {
@@ -36,7 +43,8 @@ body {
     background-color: #aa5555;
     padding: 1em 0em;
     margin: auto;
-    width: 50%;
+    width: 92%;
+    max-width: 960px;
 }
 
 .navi .items {
@@ -76,7 +84,8 @@ body {
     background-color: #ffffff;
     font: 1em 'Roboto', sans-serif;
     margin: 0em auto 0em auto;
-    width: 50%;
+    width: 92%;
+    max-width: 960px;
     padding: 0em 0em 0em 0em;
 }
 
@@ -109,7 +118,8 @@ h1, h2 {
     font: 1em 'Roboto', sans-serif;
     margin: 0em auto;
     padding: 1em 0em 2em 0em;
-    width: 50%;
+    width: 92%;
+    max-width: 960px;
 }
 
 input {
