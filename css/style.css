@@ -13,17 +13,23 @@ body {
     background-color: #aa2222;
     color: #ffffff;
     height: 100px;
+    min-height: 100px;
     margin: auto;
     width: 92%;
     max-width: 960px;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .header .banner-logo {
-    height: 84px;
-    width: auto;
-    margin-left: 10px;
+    display: block;
+    height: 84px !important;
+    max-height: 84px !important;
+    width: auto !important;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .header .title{
