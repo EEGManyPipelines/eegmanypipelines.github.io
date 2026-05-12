@@ -1,6 +1,11 @@
+:root {
+    --anchor-offset: 170px;
+}
+
 html {
     margin: 0em;
     padding: 0em;
+    scroll-padding-top: var(--anchor-offset);
 }
 
 body {
@@ -21,6 +26,9 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .header .banner-logo {
@@ -53,6 +61,13 @@ body {
     margin: auto;
     width: 92%;
     max-width: 960px;
+    position: sticky;
+    top: 104px;
+    z-index: 999;
+}
+
+[id] {
+    scroll-margin-top: var(--anchor-offset);
 }
 
 .navi .items {
