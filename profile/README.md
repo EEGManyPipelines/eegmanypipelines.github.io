@@ -1,4 +1,5 @@
-# EEGManyPipelines 
+# EEGManyPipelines
+
 We are delighted to announce the official launch of the EEGManyPipelines project!
 This project is inspired by other recent projects involving many independent analysis teams to investigate how different analysts approach a given data set and how analysis approaches affect the obtained results (e.g., [^1][^2]).
 The aim of this project is to extend this novel initiative to EEG research. We believe this to be particularly important in the case of EEG data, as compared to other neuroimaging research, analysis pipelines are less standardized[^3] and have more degrees of freedom.
@@ -12,15 +13,17 @@ Participants will then report their results and a detailed description of the an
 </p>
 
 ## GitHub projects
+
 * `Position_paper`: Summary figures of demographics and representiveness of the analysts participating in the EEGManyPipelines project. Used in the poistion paper (Trübutschek et al., 2022).
 
 ## Publications
+
 * Algermissen, J., Busch, N., Cesnaite, E., Fischer, N., Gianelli, C., Koen, J., Marshall, T., Navid, M. S., Nilsonne, G., Pascarella, A., Puoliväli, T., Senoussi, M., Trubutschek, D., Vinding, M. C., Vitale, A., Yang, Y.-F., & Yeaton, J. (2022). *EEGManyPipelines: Robustness of EEG results across analysis pipelines.* Open Science Framework. https://doi.org/10.17605/OSF.IO/42K5H
 * Trübutschek, D., Yang, Y.-F., Gianelli, C., Cesnaite, E., Fischer, N. L., Vinding, M. C., Marshall, T., Algermissen, J., Pascarella, A., Puoliväli, T., Vitale,  A., Busch, N., & Nilsonne, G. (2022). *EEGManyPipelines: A large-scale, grass-root multi-analyst study of EEG analysis practices in the wild* [Preprint]. MetaArXiv. https://doi.org/10.31222/osf.io/jq342
 
 ## Contact
 
-For more information about the steering comittee and people involved in the project, please visit our offical website: https://eegmanypipelines.org
+For more information about the steering committee and people involved in the project, please visit our official website: https://eegmanypipelines.github.io
 
 For questions or comments, please write email to committee@eegmanypipelines.org.
 
@@ -28,6 +31,7 @@ Follow EEGManyPipelines on Twitter [@EegManyPipes](https://twitter.com/EegManyPi
 
 
 ## Funding
+
 The project is supported by research grants from the German Research Foundation (DFG) and the DFG priority program ["META-REP: A Meta-scientific Programme to Analyse and Optimise Replicability in the Behavioural, Social, and Cognitive Sciences"](https://www.psy.lmu.de/soz/meta-rep/index.html) to Niko Busch and a research grant from [Riksbankens Jubileumsfond](https://www.rj.se/en/grants/2021/eegmanypipelines---effekter-av-analytisk-variabilitet-pa-resultat-i-eeg-forskning/) to Gustav Nilsonne.
 
 
